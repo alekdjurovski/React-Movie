@@ -70,7 +70,7 @@ export class Home extends Component {
     if (searchTerm === "") {
       endpoint = `${API_URL}movie/popular?api_key=${API_KEY}&language=en-US&page=1`;
     } else {
-      endpoint = `${API_URL}search/company?api_key=${API_KEY}&query=${searchTerm}&page=1`;
+      endpoint = `${API_URL}search/movie?api_key=${API_KEY}&query=${searchTerm}&page=1`;
     }
     this.fetchItems(endpoint);
   };
@@ -109,10 +109,12 @@ export class Home extends Component {
               );
             })}
           </FourColGrid>
+          {this.state.loading ? <Spinner /> : null}
+          {this.state.currentPage <= this.state.totalPages &&
+          !this.state.loading ? (
+            <LoadMoreBtn text="Load More" onClick={this.loadMoreItems} />
+          ) : null}
         </div>
-
-        <Spinner />
-        <LoadMoreBtn />
       </div>
     );
   }
