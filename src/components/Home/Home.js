@@ -25,13 +25,13 @@ export class Home extends Component {
     searchTerm: ""
   };
 
-  componentDidMount() {debugger
+  componentDidMount() {
     this.setState({ loading: true });
     const endpoint = `${API_URL}movie/popular?api_key=${API_KEY}&language=en-US&page=1`;
     this.fetchItems(endpoint);
   }
 
-  fetchItems = endpoint => {debugger
+  fetchItems = endpoint => {
     fetch(endpoint)
       .then(result => result.json())
       .then(result => {
@@ -45,7 +45,7 @@ export class Home extends Component {
       });
   };
 
-  loadMoreItems = () => {debugger
+  loadMoreItems = () => {
     let endpoint = "";
     this.setState({ loadnig: true });
 
@@ -60,7 +60,7 @@ export class Home extends Component {
     this.fetchItems(endpoint);
   };
 
-  searchItems = searchTerm => {debugger
+  searchItems = searchTerm => {
     let endpoint = "";
     this.setState({
       movies: [],
@@ -75,7 +75,7 @@ export class Home extends Component {
     this.fetchItems(endpoint);
   };
 
-  render() {debugger
+  render() {
     return (
       <div className="rmdb-home">
         {this.state.heroImage ? (
