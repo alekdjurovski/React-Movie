@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/github.io/movie-react/static/css/main.03ce36f2.chunk.css",
+    "main.js": "/github.io/movie-react/static/js/main.db04bea2.chunk.js",
+    "main.js.map": "/github.io/movie-react/static/js/main.db04bea2.chunk.js.map",
+    "runtime-main.js": "/github.io/movie-react/static/js/runtime-main.8a6e9e89.js",
+    "runtime-main.js.map": "/github.io/movie-react/static/js/runtime-main.8a6e9e89.js.map",
+    "static/js/2.4b12920b.chunk.js": "/github.io/movie-react/static/js/2.4b12920b.chunk.js",
+    "static/js/2.4b12920b.chunk.js.map": "/github.io/movie-react/static/js/2.4b12920b.chunk.js.map",
+    "index.html": "/github.io/movie-react/index.html",
+    "precache-manifest.0031b0d9f2c2f31ff57fff0f21f6a000.js": "/github.io/movie-react/precache-manifest.0031b0d9f2c2f31ff57fff0f21f6a000.js",
+    "service-worker.js": "/github.io/movie-react/service-worker.js",
+    "static/css/main.03ce36f2.chunk.css.map": "/github.io/movie-react/static/css/main.03ce36f2.chunk.css.map",
+    "static/js/2.4b12920b.chunk.js.LICENSE": "/github.io/movie-react/static/js/2.4b12920b.chunk.js.LICENSE"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.8a6e9e89.js",
+    "static/js/2.4b12920b.chunk.js",
+    "static/css/main.03ce36f2.chunk.css",
+    "static/js/main.db04bea2.chunk.js"
+  ]
+}
